@@ -41,7 +41,7 @@ public class PersonController {
     }
 
     @GetMapping(value = "/{id}/person", produces = {MediaType.APPLICATION_JSON_VALUE})
-    @Operation(summary = "Person", description = "Search person by id")
+    @Operation(summary = "Person", description = "Search person by id in the database")
     @ApiResponse(responseCode = "200", description = "Search person successfully")
     @ApiResponse(responseCode = "404", description = "Not found information for person")
     @ApiResponse(responseCode = "422", description = "Params not valid")
@@ -51,7 +51,7 @@ public class PersonController {
     }
 
     @GetMapping(value = "/person", produces = {MediaType.APPLICATION_JSON_VALUE})
-    @Operation(summary = "Person", description = "Search person by name")
+    @Operation(summary = "Person", description = "Search person by name in the database")
     @ApiResponse(responseCode = "200", description = "Search person successfully")
     @ApiResponse(responseCode = "404", description = "Not found information for person")
     @ApiResponse(responseCode = "422", description = "Params not valid")
