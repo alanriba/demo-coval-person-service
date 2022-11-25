@@ -8,6 +8,10 @@ import java.util.Collection;
 import java.util.List;
 import java.util.stream.Collectors;
 
+
+/**
+ * Class dedicate to convert DTO to Entity or Entity to DTO
+ */
 public class UtilsModelMapper {
 
     private static final ModelMapper modelMapper;
